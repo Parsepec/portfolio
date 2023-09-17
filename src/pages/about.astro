@@ -1,0 +1,241 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout title="About | Imran Abubakar" description="About Imran Abubakar">
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+      >
+        <img src="/assets/me.jpg" alt="Imran Selfie" />
+      </Hero>
+
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            Hey, I'm Imran a software developer, I've had a relationship with
+            computers for a longtime, I have a BSc in Information Technology and
+            Business Information Systems from Middlesex Univeristy.
+          </p>
+          <p>
+            I consider myself very proficient in software development as I have
+            been writing code for over 6 years, I'm interested in different
+            aspects of Information Technology including web applications, Bot
+            development, Blockchain, AI, linux Automation,
+          </p>
+          <p>
+            I have worked with various companies in different roles over the years both onsite and
+            remote, I have become accustomed to the nuances of collaborating with people and the importance of effectively communicating with people in
+            different roles.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <h5>
+            Middlesex Univeristy / Bsc Honors Information Technology and
+            Business Information systems
+          </h5>
+          <span>DECEMBER 2018 - OCTOBER 2019, Flic en Flac, Mauritius.</span>
+          <ul style="margin-top: 8px; font-size: 16px;">
+            <li>
+              Led my team through the UI/UX development process of an
+              application geared towards students applying for visas; from user
+              research to competitor research to usability testing
+            </li>
+            <li>
+              Engineered an application intended for managing food trucks.
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h5>
+            Meridian Technologies, Aptech Computer Education / Advanced Diploma
+            in Software Engineering
+          </h5>
+          <span>SEPTEMBER 2016 - AUGUST 2018, Abuja, Nigeria.</span>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Experience</h2>
+        <div class="content">
+          <h5>Indigene Systems /  FrontEnd Web Developer(React Js /Next Js)</h5>
+          <span>November 2022 - April 2023, Remote.(contract)</span>
+          <ul style="margin-top: 8px; font-size: 16px;">
+            <li>
+              Built a web application meant for property owners to manage tenants and properties
+            </li>
+            <li>
+              Interacting with several stakeholders including project managers,
+              backend .NET Engineers, UI/UX Designers and Devops Engineers
+            </li>
+
+          </ul>
+        </div>
+        <div class="content">
+          <h5>CodeProsol / FrontEnd Web Developer(Vue js/ Nuxt Js)</h5>
+          <span>November 2022 - April 2023, Remote.(contract)</span>
+          <ul style="margin-top: 8px; font-size: 16px;">
+            <li>
+              Built a web application meant to connect Employers and Job seekers
+            </li>
+            <li>
+              Interacting with several stakeholders from project managers to
+              backend .NET Engineers to UI/UX Designers
+            </li>
+            <li>Mentored junior Vue Js Engineers</li>
+          </ul>
+        </div>
+        <div class="content">
+          <h5>National Population Commission / IT Manager</h5>
+          <span>June 2022 - August 2022, ABUJA NIGERIA.</span>
+          <ul style="margin-top: 8px; font-size: 16px;">
+            <li>Assisted in setting up the call center</li>
+            <li>Maintained a number of servers (Application,PRI,GSM).</li>
+            <li>
+              Identified and resolved computer, phone line, and Internet
+              connection issues.
+            </li>
+            <li>Configured and maintained a Biometric Attendance System</li>
+            <li>
+              Involved in training call center agents to handle phone lines as
+              well as the call center software
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h5>Jubilee Systems / Web Developer</h5>
+          <span>July 2020 - August 2022, ABUJA NIGERIA.</span>
+          <ul style="margin-top: 8px; font-size: 16px;">
+            <li>Designed user facing aspects of web projects.</li>
+            <li>Engineered user interfaces into applications.</li>
+            <li>
+              Assisted in house graphics designer transition to user interface
+              design.
+            </li>
+            <li>
+              Reviewed customer relations practices and advised better
+              approaches
+            </li>
+            <li>
+              Maintained existing websites involving a varying web technologies
+            </li>
+            <li>
+              Introduced JAM stack sites for better user experiences(Nuxt /
+              Next/Gridsome js)
+            </li>
+          </ul>
+        </div>
+      </section>
+	  <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="content">
+          <ul>
+            <li>Full Stack Web Development</li>
+            <li>Linux Administration</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Solidity</li>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Astro</li>
+            <li>Svelte</li>
+            <li>Node</li>
+            <li>Deno</li>
+            <li>Next Js</li>
+            <li>Nuxt Js</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Contact</h2>
+        <div class="content">
+          <ul>
+            <li>Email: <a href="malito:narmi.abu@gmail.com"></a>narmi.abu@gmail.com</li>
+            <li>Phone: +2348148882021</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+  span {
+    font-size: 12px;
+    margin-top: -25px;
+  }
+  h5 {
+    font-size: 22px;
+  }
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  main img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style>
